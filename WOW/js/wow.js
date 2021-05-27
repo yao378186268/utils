@@ -511,5 +511,3 @@
   })();
 
 }).call(this);
-
-new WOW().init()
