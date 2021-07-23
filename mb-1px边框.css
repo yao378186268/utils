@@ -1,0 +1,10 @@
+
+/* 移动端1px相当于手机上的2px,所以需要缩小0.5，在把width放大200% */
+.box{
+	height:1px;
+	background-color: #fff;
+	transfrom:scale(0.5);
+	width:200%;
+	/* 重置旋转基准点 */
+	transfrom-origin: 0 0;
+}
