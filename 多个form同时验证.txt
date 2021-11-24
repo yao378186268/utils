@@ -1,0 +1,15 @@
+ async changActivieStop() {
+      try {
+        await Promise.all([
+          this.$refs.UserRefactive.validate(),
+          this.$refs.UserRefactives.validate()
+        ]);
+        this.uploadInfo()
+      } catch (error) {
+        this.$message({
+          title: "错误",
+          type: "error",
+          message: "请正确填写信息",
+        })
+      }
+    },
